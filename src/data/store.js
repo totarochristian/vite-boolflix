@@ -49,5 +49,9 @@ export const store = reactive({
         isActive: false
       }
     ]
+  },
+  selectedCarouselCard: {
+    isOpened: false,
+    carouselCardData: null
   }
 });

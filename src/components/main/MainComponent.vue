@@ -7,16 +7,20 @@
     <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.popular" title="Serie TV popolari"/>
     <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.topRated" title="Serie TV più votate"/>
     <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.airingToday" title="Serie tv in onda oggi"/>
+
+    <CardInfoComponent />
   </main>
 </template>
 
 <script>
   import CarouselComponent from '../subMain/main/CarouselComponent.vue';
+  import CardInfoComponent from '../subMain/general/CardInfoComponent.vue';
   import { store } from '../../data/store';
   export default {
     name: 'MainComponent',
     components:{
-      CarouselComponent
+      CarouselComponent,
+      CardInfoComponent
     },
     data(){
       return{

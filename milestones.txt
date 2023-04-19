@@ -29,13 +29,13 @@ v [2 ore] Creazione di un componente base denominato CarouselComponent:
   Ostacoli:
     vv non può essere utilizzato il carosello di bootstrap perchè ha una struttura diversa da quella che si vuole creare, quindi va fatto a mano
     vv in questa fase non è stato creato il componente del singolo elemento del carosello, si può testare con dei quadrati
-- [30 min] Creazione del componente base denominato CarouselCardComponent:
+v [30 min] Creazione del componente base denominato CarouselCardComponent:
   questo componente rappresenta il film / serie tv / ... visualizzato dentro il carosello.
   Dovrà essere composto da un'immagine rettangolare.
   Feature:
     vv tramite le props viene passato un oggetto rappresentante il film / serie tv
     vv grandezza predefinita
-    -- al clic dovrà essere aperta una modale al centro dello schermo con i dati del film / serie tv cliccato
+    vv al clic dovrà essere aperta una modale al centro dello schermo con i dati del film / serie tv cliccato
 - [1 ora] Creazione di un componente base denominato CardInfoComponent:
   questo componente verrà utilizzato per visualizzare le info di un film / serie tv selezionato.
   Sarà unico all'interno del componente main, sarà sempre invisibile fino a quando un CarouselCardComponent non verrà cliccato.
