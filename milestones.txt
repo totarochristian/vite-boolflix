@@ -47,7 +47,7 @@ Milestone 2 - Creazione di un carosello completo [Se va tutto bene 4h e 30min al
     -- con un array finto ottenuto tramite postman, simula un carosello dentro il main
     -- prova l'apertura e chiusura del componente CardInfoComponent tramite clic di un CarouselCardComponent
 
-Milestone 3 - [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
+Milestone 3 - Creazione dei render list dinamici [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
 - [1 ora] Creazione di un componente RenderListComponent:
   questo componente richiamerà semplicemente un carosello passandogli una lista di film / serie tv / ... da visualizzare.
   Feature:
@@ -55,3 +55,4 @@ Milestone 3 - [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
     -- verrà fatta una chiamata ad un API per ottenere la lista di film
     -- contiene un carosello a cui viene passata la lista di film ottenuta con axios
 - [1 ora] Comporre il main creando più render list in base a cosa si vuole mettere nella home
+
