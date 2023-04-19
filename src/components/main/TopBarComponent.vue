@@ -1,12 +1,16 @@
 <template>
   <header>
-    top bar
+    <MenuComponent />
   </header>
 </template>
 
 <script>
+  import MenuComponent from '../subMain/MenuComponent.vue';
   export default {
-    name: 'TopBarComponent'
+    name: 'TopBarComponent',
+    components: {
+      MenuComponent
+    }
   }
 </script>
 
