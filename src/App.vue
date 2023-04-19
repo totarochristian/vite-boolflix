@@ -1,10 +1,14 @@
 <template>
-  <button type="button" class="btn btn-primary">Test con bootstrap</button>
+  <TopBarComponent />
 </template>
 
 <script>
+  import TopBarComponent from './components/main/TopBarComponent.vue'
   export default {
-    name: 'App'
+    name: 'App',
+    components: {
+      TopBarComponent
+    }
   }
 </script>
 
