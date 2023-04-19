@@ -35,7 +35,7 @@
     },
     methods: {
         GetCarouselCardsData() {
-            let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=it";
+            let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=en-US";
             axios.get(url).then((res) => {
                 res.data.results.forEach((data, index) => {
                     this.carouselData.push({ data: data, show: index < 9 ? true : false });

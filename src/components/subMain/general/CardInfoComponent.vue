@@ -7,6 +7,9 @@
         <h3 class="px-4">{{ store.selectedCarouselCard.carouselCardData.title }}</h3>
         <span></span>
       </div>
+      <div id="cardInfoComponentContent">
+        <p class="p-4">{{ store.selectedCarouselCard.carouselCardData.overview }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -39,6 +42,7 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 2000;
+    overflow: hidden;
     #cardInfoComponent{
       height: calc(100% - 2rem);
       margin-top: 2rem;
