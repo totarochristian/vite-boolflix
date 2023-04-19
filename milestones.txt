@@ -62,3 +62,9 @@ Milestone 4 - Visualizzazione render list di ricerca [Se va tutto bene 1 ora alt
 
 Milestone 5 - Collegamento con l'offcanvas laterale [Se va tutto bene 1 ora altrimenti 2 per il fix di bug]
 - [1 ora] Al clic su una voce dell'offcanvas visualizzare solo la voce selezionata
+
+Milestone 6 - Con il clic nell'offcanvas aprire film / serie tv / ... senza carosello [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
+- [1 ora] Creare un componente MatrixComponent che visualizza la lista di film / serie tv / ... a matrice e non più a carosello
+- [1 ora] Aggiungere questi componenti e renderli visibili solo al click della relativa voce. Il collegamento del milestone 5 verrà rimosso.
+  In questo modo nella home verranno visualizzati i caroselli, con il click sulle voci del menù un matrix alla volta.
+  Con la ricerca, di nuovo i caroselli generali.
