@@ -33,19 +33,19 @@ export const store = reactive({
         isActive: false
       },
       {
-        name: "Serie Tv",
+        name: "TV series",
         isActive: false
       },
       {
-        name: "In arrivo",
+        name: "Upcoming",
         isActive: false
       },
       {
-        name: "Popolari",
+        name: "Popular",
         isActive: false
       },
       {
-        name: "Più votati",
+        name: "Top rated",
         isActive: false
       }
     ]

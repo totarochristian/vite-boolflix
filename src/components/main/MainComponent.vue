@@ -1,12 +1,12 @@
 <template>
   <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4">
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.popular" title="Film popolari"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.topRated" title="Film più votati"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.nowPlaying" title="Film ora al cinema"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.upcoming" title="Film che usciranno a breve"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.popular" title="Serie TV popolari"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.topRated" title="Serie TV più votate"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.airingToday" title="Serie tv in onda oggi"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.popular" title="Popular film"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.topRated" title="Top rated film"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.nowPlaying" title="Now playing film"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.upcoming" title="Upcoming film"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.popular" title="Popular TV series"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.topRated" title="Top rated TV series"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.airingToday" title="Airing today TV series"/>
 
     <CardInfoComponent />
   </main>
