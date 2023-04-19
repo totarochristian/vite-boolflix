@@ -6,7 +6,7 @@ v [15 min] Crea due componenti vuoti e assegnali ad App (questi suddividono in d
 v [15 min] Crea il componente MenuComponent ed assegnalo al componente top bar:
   questo componente sarà d-flex, con space between; da un lato ci sarà l'icona dell'hamburger menù con il logo del sito ed eventualmente il nome,
   mentre dall'altra ci sarà l'icona della lente di ricerca e i tre puntini (ellipsis) per aprire le impostazioni.
-- [30 min] Crea il componente SearchComponent:
+v [30 min] Crea il componente SearchComponent:
   questo componente è composto da una freccia per tornare alla visualizzazione del menu component, un input text e l'icona della lente; in questa fase non funziona la ricerca.
   Quando l'utente clicca la lente nel menù component, il menù component viene reso invisibile e comparirà questo elemento. Cliccando la freccia del torna indietro, questo elemento 
   verrà nascosto e verrà reso visibile il menù component. Possibilmente, definire dentro lo store una variabile che è collegata con v-model all'input text e che verrà poi
