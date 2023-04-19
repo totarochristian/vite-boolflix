@@ -5,7 +5,7 @@
     </div>
     <div id="searchComponentActions" class="d-flex align-items-center gap-1">
       <i class="fs-4 fa-solid fa-magnifying-glass"></i>
-      <input class="col-12" type="text" name="searchInputText" id="searchInputText" placeholder="Cerca" v-model="store.menuSettings.textToSearch">
+      <input class="col-12" type="text" name="searchInputText" id="searchInputText" placeholder="Search" v-model="store.menuSettings.textToSearch">
     </div>
   </div>
   <div>
