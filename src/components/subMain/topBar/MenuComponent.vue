@@ -1,7 +1,7 @@
 <template>
   <div id="menuComponent" class="p-4 d-flex justify-content-between align-items-center">
     <div id="menuComponentTitle" class="d-flex align-items-center gap-4">
-      <i class="fs-4 fa-solid fa-bars text-white"></i>
+      <i class="fs-4 fa-solid fa-bars text-white" @click="store.menuSettings.isSectionsOpened = true"></i>
       <h3>Boolflix</h3>
     </div>
     <div id="menuComponentActions" class="d-flex align-items-center gap-4">
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import { store } from '../../../data/store'
+  import { store } from '../../../data/store';
   export default {
     name: 'MenuComponent',
     data(){
