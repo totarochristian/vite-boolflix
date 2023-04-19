@@ -1,5 +1,9 @@
 @use './partial/variables' as *;
 
+$fa-font-path: '../webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+
 @import 'bootstrap/scss/bootstrap';
 
 body{
@@ -14,6 +18,6 @@ main{
   height: $mainSize;
   width: 100%;
 }
-header,main{
+main{
   border: 2px solid $titleColor;
 }
