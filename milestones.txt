@@ -19,10 +19,10 @@ v [30 min] Test vari:
     -- l'apertura e chiusura del componente SectionsComponent
 
 Milestone 2 - Creazione di un carosello completo [Se va tutto bene 4h e 30min altrimenti 5/6 ore per il fix di bugs]
-- [2 ore] Creazione di un componente base denominato CarouselComponent:
+v [2 ore] Creazione di un componente base denominato CarouselComponent:
   questo carosello verrà utilizzato più e più volte per la visualizzazione dei film / serie tv / ... ottenuti tramite le api.
   Le feature fondamentali sono: 
-    -- tramite le props viene passata una lista di oggetti
+    -- tramite le props viene passato un endpoint dal quale ricavare oggetti
     -- tramite le props viene passato un titolo del carosello (che verrà visualizzato sopra il carosello)
     -- il carosello deve mostrare 9 elementi per volta
     -- il carosello deve avere due frecce, una a destra e una a sinistra, visualizzate sull'hover nel carosello
