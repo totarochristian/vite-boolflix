@@ -6,11 +6,17 @@ export const store = reactive({
     baseUrl: 'https://api.themoviedb.org/3/',
     imageBaseUrl: 'https://image.tmdb.org/t/p/original',
     endPoints:{
-      popular: 'movie/popular/',
-      topRated: 'movie/top_rated/',
-      upcoming: 'movie/upcoming',
-      nowPlaying: 'movie/now_playing',
-      latest: 'movie/latest'
+      film: {
+        popular: 'movie/popular/',
+        topRated: 'movie/top_rated/',
+        nowPlaying: 'movie/now_playing',
+        upcoming: 'movie/upcoming'
+      },
+      tv: {
+        popular: 'tv/popular/',
+        topRated: 'tv/top_rated/',
+        airingToday: 'tv/airing_today'
+      }
     }
   },
   menuSettings: {

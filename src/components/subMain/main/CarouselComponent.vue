@@ -78,8 +78,11 @@
 <style lang="scss" scoped>
   .carousel{
     width: 100%;
-    height: 20vh;
+    height: auto;
+    padding: 1rem 0;
     .carouselImages{
+      width: 100%;
+      height: 30vh;
       position: relative;
       &:hover .next,&:hover .prev{
         visibility: visible;
