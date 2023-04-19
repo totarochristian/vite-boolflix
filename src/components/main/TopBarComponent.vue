@@ -9,7 +9,7 @@
 <script>
   import MenuComponent from '../subMain/topBar/MenuComponent.vue';
   import SearchComponent from '../subMain/topBar/SearchComponent.vue';
-  import SectionsComponent from '../subMain/topBar/SectionsComponent.vue';
+  import SectionsComponent from '../subMain/general/SectionsComponent.vue';
   import { store } from '../../data/store'
   export default {
     name: 'TopBarComponent',
