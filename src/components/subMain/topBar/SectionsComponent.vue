@@ -1,5 +1,5 @@
 <template>
-  <div id="sectionsComponent" class="col-8 col-md-6 col-lg-4 d-flex flex-column gap-1">
+  <div id="sectionsComponent" class="col-6 col-md-4 col-lg-3 d-flex flex-column gap-1">
     <div id="sectionsComponentHeader" class="p-4 d-flex justify-content-end align-items-center">
       <i class="fs-4 fa-solid fa-xmark" @click="store.menuSettings.isSectionsOpened = false"></i>
     </div>
