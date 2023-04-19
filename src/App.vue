@@ -1,5 +1,5 @@
 <template>
-  Test
+  <button type="button" class="btn btn-primary">Test con bootstrap</button>
 </template>
 
 <script>
