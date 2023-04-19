@@ -5,15 +5,21 @@
       <h3>Boolflix</h3>
     </div>
     <div id="menuComponentActions" class="d-flex align-items-center gap-4">
-      <i class="fs-4 pe-4 fa-solid fa-magnifying-glass"></i>
+      <i class="fs-4 pe-4 fa-solid fa-magnifying-glass" @click="store.menuSettings.isSearchBarOpened = true"></i>
       <i class="fs-4 fa-solid fa-ellipsis"></i>
     </div>
   </div>
 </template>
 
 <script>
+  import { store } from '../../../data/store'
   export default {
-    name: 'MenuComponent'
+    name: 'MenuComponent',
+    data(){
+      return{
+        store
+      }
+    }
   }
 </script>
 
@@ -22,6 +28,9 @@
   #menuComponent{
     width: 100%;
     height: 100%;
+    i{
+      cursor: pointer;
+    }
     h3{
       color: $titleColor;
     }

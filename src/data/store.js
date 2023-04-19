@@ -6,7 +6,8 @@ export const store = reactive({
     baseUrl: 'https://api.themoviedb.org/3/'
   },
   menuSettings: {
-    isSearchBarOpened: false,
+    isSearchBarOpened: true,
+    textToSearch: '',
     sections: ["Home", "Film", "Serie Tv", "In arrivo", "Popolari", "Più votati"]
   }
 });
