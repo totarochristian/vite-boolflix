@@ -11,7 +11,7 @@ Milestone 1 - Creazione base del sito e concentrazione sulla barra superiore [Se
   Quando l'utente clicca la lente nel menù component, il menù component viene reso invisibile e comparirà questo elemento. Cliccando la freccia del torna indietro, questo elemento 
   verrà nascosto e verrà reso visibile il menù component. Possibilmente, definire dentro lo store una variabile che è collegata con v-model all'input text e che verrà poi
   sfruttata per la ricerca.
-- [30 min] Crea un componente SectionsComponent che sarà un offcanvas contenente varie voci, per ora: Film, Serie TV, In arrivo, Popolari, Più votati.
+- [30 min] Crea un componente SectionsComponent che sarà un offcanvas contenente varie voci, per ora: Home, Film, Serie TV, In arrivo, Popolari, Più votati.
   Questo component andrà inserito dentro il menù component e verrà visualizzato tramite il click dell'icona dell'hamburger menu.
 - [30 min] Test vari:
     -- la visualizzazione del menù
