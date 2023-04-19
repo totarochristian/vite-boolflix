@@ -1,7 +1,7 @@
 <template>
-  <div>
-    Main component
-  </div>
+  <main>
+    Content
+  </main>
 </template>
 
 <script>
@@ -11,5 +11,5 @@
 </script>
 
 <style lang="scss" scoped>
-
+  
 </style>

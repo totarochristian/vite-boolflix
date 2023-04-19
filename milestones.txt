@@ -1,6 +1,6 @@
 Milestone 1 - Creazione base del sito e concentrazione sulla barra superiore [Se va tutto bene 2h e 10m altrimenti circa 3/4 ore per il fix di bugs]
 v [10 min] Crea la base vuota del progetto
-- [15 min] Crea due componenti vuoti e assegnali ad App (questi suddividono in due parti logiche la pagina):
+v [15 min] Crea due componenti vuoti e assegnali ad App (questi suddividono in due parti logiche la pagina):
   vv TopBarComponent
   vv MainComponent
 - [15 min] Crea il componente MenuComponent ed assegnalo al componente top bar:

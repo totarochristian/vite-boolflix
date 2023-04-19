@@ -1,3 +1,8 @@
 // Sizes
+$headerSize: 80px;
+$mainSize: calc(100vh - $headerSize);
 
 // Colors
+$bodyBackgroundColor: black;
+$bodyColor: white;
+$titleColor: rgb(44, 44, 255);

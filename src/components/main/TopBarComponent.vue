@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <header>
     top bar
-  </div>
+  </header>
 </template>
 
 <script>

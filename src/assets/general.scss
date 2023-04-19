@@ -1,3 +1,19 @@
 @use './partial/variables' as *;
 
 @import 'bootstrap/scss/bootstrap';
+
+body{
+  background-color: $bodyBackgroundColor;
+  color: $bodyColor;
+}
+header{
+  height: $headerSize;
+  width: 100%;
+}
+main{
+  height: $mainSize;
+  width: 100%;
+}
+header,main{
+  border: 2px solid $titleColor;
+}
