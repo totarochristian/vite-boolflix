@@ -18,7 +18,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @use '../../assets/styles/partial/variables' as *;
+  @use '../../../assets/styles/partial/variables' as *;
   #menuComponent{
     width: 100%;
     height: 100%;
