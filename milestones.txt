@@ -13,7 +13,36 @@ Milestone 1 - Creazione base del sito e concentrazione sulla barra superiore [Se
   sfruttata per la ricerca.
 - [30 min] Crea un componente SectionsComponent che sarà un offcanvas contenente varie voci, per ora: Film, Serie TV, In arrivo, Popolari, Più votati.
   Questo component andrà inserito dentro il menù component e verrà visualizzato tramite il click dell'icona dell'hamburger menu.
-- [30 min] Testa:
+- [30 min] Test vari:
     -- la visualizzazione del menù
     -- il passaggio dal menù al componente di ricerca e viceversa
     -- l'apertura e chiusura del componente SectionsComponent
+
+Milestone 2 - Creazione di un carosello completo [Se va tutto bene 4h e 30min altrimenti 5/6 ore per il fix di bugs]
+- [2 ore] Creazione di un componente base denominato CarouselComponent:
+  questo carosello verrà utilizzato più e più volte per la visualizzazione dei film / serie tv / ... ottenuti tramite le api.
+  Le feature fondamentali sono: 
+    -- tramite le props viene passata una lista di oggetti
+    -- tramite le props viene passato un titolo del carosello (che verrà visualizzato sopra il carosello)
+    -- il carosello deve mostrare 9 elementi per volta
+    -- il carosello deve avere due frecce, una a destra e una a sinistra, visualizzate sull'hover nel carosello
+  Ostacoli:
+    -- non può essere utilizzato il carosello di bootstrap perchè ha una struttura diversa da quella che si vuole creare, quindi va fatto a mano
+    -- in questa fase non è stato creato il componente del singolo elemento del carosello, si può testare con dei quadrati
+- [30 min] Creazione del componente base denominato CarouselCardComponent:
+  questo componente rappresenta il film / serie tv / ... visualizzato dentro il carosello.
+  Dovrà essere composto da un'immagine rettangolare.
+  Feature:
+    -- tramite le props viene passato un oggetto rappresentante il film / serie tv
+    -- grandezza predefinita
+    -- al clic dovrà essere aperta una modale al centro dello schermo con i dati del film / serie tv cliccato
+- [1 ora] Creazione di un componente base denominato CardInfoComponent:
+  questo componente verrà utilizzato per visualizzare le info di un film / serie tv selezionato.
+  Sarà unico all'interno del componente main, sarà sempre invisibile fino a quando un CarouselCardComponent non verrà cliccato.
+  Feature:
+    -- lo store conterrà un oggetto che si riferisce ai dati di un film / serie tv cliccato
+    -- lo store conterrà una variabile booleana che permetterà la visualizzazione di questo componente
+    -- per renderlo invisibile ci sarà una x in alto a destra
+- [1 ora] Test vari:
+    -- con un array finto ottenuto tramite postman, simula un carosello dentro il main
+    -- prova l'apertura e chiusura del componente CardInfoComponent tramite clic di un CarouselCardComponent
