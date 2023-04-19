@@ -13,7 +13,7 @@ v [30 min] Crea il componente SearchComponent:
   sfruttata per la ricerca.
 v [30 min] Crea un componente SectionsComponent che sarà un offcanvas contenente varie voci, per ora: Home, Film, Serie TV, In arrivo, Popolari, Più votati.
   Questo component andrà inserito dentro il menù component e verrà visualizzato tramite il click dell'icona dell'hamburger menu.
-- [30 min] Test vari:
+v [30 min] Test vari:
     -- la visualizzazione del menù
     -- il passaggio dal menù al componente di ricerca e viceversa
     -- l'apertura e chiusura del componente SectionsComponent
