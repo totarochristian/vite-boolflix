@@ -2,7 +2,7 @@ Milestone 1 - Creazione base del sito e concentrazione sulla barra superiore [Se
 v [10 min] Crea la base vuota del progetto
 - [15 min] Crea due componenti vuoti e assegnali ad App (questi suddividono in due parti logiche la pagina):
   vv TopBarComponent
-  -- MainComponent
+  vv MainComponent
 - [15 min] Crea il componente MenuComponent ed assegnalo al componente top bar:
   questo componente sarà d-flex, con space between; da un lato ci sarà l'icona dell'hamburger menù con il logo del sito ed eventualmente il nome,
   mentre dall'altra ci sarà l'icona della lente di ricerca e i tre puntini (ellipsis) per aprire le impostazioni.
