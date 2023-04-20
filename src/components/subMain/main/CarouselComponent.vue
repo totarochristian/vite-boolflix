@@ -1,7 +1,7 @@
 <template>
-  <div class="carousel d-flex flex-column">
+  <div ref="myElement" class="carousel d-flex flex-column">
     <h4>{{ title }}</h4>
-    <div class="carouselImages d-flex gap-3">
+    <div class="carouselImages d-flex justify-content-center gap-3">
       <CarouselCardComponent v-for="cardData in carouselData" :card-data="cardData"/>
       <button class="prev" @click="ShowNextPrev(-1)" :class="{'d-none': offset.start==0}">
         <i class="fs-4 fa-solid fa-chevron-left"></i>
@@ -29,7 +29,7 @@
             store,
             offset: {
                 start: 0,
-                end: 8
+                end: 0
             },
             carouselData: []
         }
@@ -64,8 +64,8 @@
                 this.offset.end = this.offset.end + 1 < this.carouselData.length ? this.offset.end + 1 : this.offset.end;
             }
             else if (direction < 0) {
-                this.offset.start = this.offset.start - 1 >= 0 ? this.offset.start - 1 : this.offset.start;
                 this.offset.end = this.offset.start - 1 >= 0 ? this.offset.end - 1 : this.offset.end;
+                this.offset.start = this.offset.start - 1 >= 0 ? this.offset.start - 1 : this.offset.start;
             }
             this.carouselData.forEach((elem, index) => {
                 if (index >= this.offset.start && index <= this.offset.end)
@@ -73,12 +73,32 @@
                 else
                     elem.show = false;
             });
+        },
+        ScreenSizeChanged(){
+          const element = this.$refs.myElement;
+          if(element && element.offsetWidth){
+            const width = element.offsetWidth;
+            console.log("Nuova width: " + width);
+            let sizeOneCard = 192;
+            let numOfElementsToShow = Math.trunc(width / sizeOneCard);
+            let tmpNewEnd = this.offset.start + numOfElementsToShow;
+            this.offset.start = tmpNewEnd < this.carouselData.length ? this.offset.start : (this.carouselData.length - 2 - numOfElementsToShow >= 0 ? this.carouselData.length - 2 - numOfElementsToShow : 0);
+            this.offset.end = this.offset.start + numOfElementsToShow - 1;
+            this.ShowNextPrev(0);
+          }
         }
     },
     mounted() {
-        this.GetCarouselCardsData();
+      this.GetCarouselCardsData();
+      this.ScreenSizeChanged();
     },
-    components: { CarouselCardComponent }
+    components: { CarouselCardComponent },
+    created() {
+      window.addEventListener("resize", this.ScreenSizeChanged);
+    },
+    destroyed() {
+      window.removeEventListener("resize", this.ScreenSizeChanged);
+    }
 }
 </script>
 
@@ -89,8 +109,9 @@
     padding: 1rem 0;
     .carouselImages{
       width: 100%;
-      height: 30vh;
+      height: 290px;
       position: relative;
+      overflow-x: hidden;
       &:hover .next,&:hover .prev{
         visibility: visible;
       }
