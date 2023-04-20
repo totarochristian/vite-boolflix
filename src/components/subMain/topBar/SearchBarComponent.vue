@@ -1,11 +1,11 @@
 <template>
   <div id="searchComponent" class="p-4 d-flex justify-content-center align-items-center">
     <div id="searchComponentBack" class="ps-4 d-flex align-items-center gap-4">
-      <i class="fs-4 fa-solid fa-arrow-left" @click="store.menuSettings.isSearchBarOpened = false"></i>
+      <i class="fs-4 fa-solid fa-arrow-left" @click="store.menuSettings.isSearchBarOpened = false; store.settings.currentMenuSectionIndexOpened = 0;"></i>
     </div>
     <div id="searchComponentActions" class="d-flex align-items-center gap-1">
       <i class="fs-4 fa-solid fa-magnifying-glass"></i>
-      <input class="col-12" type="text" name="searchInputText" id="searchInputText" :placeholder="store.settings.languages[store.settings.currentLanguageIndex].search" v-model="store.menuSettings.textToSearch">
+      <input class="col-12" type="text" name="searchInputText" id="searchInputText" :placeholder="store.settings.languages[store.settings.currentLanguageIndex].search" v-model="store.menuSettings.textToSearch" @keyup="store.settings.currentMenuSectionIndexOpened = -1;">
     </div>
   </div>
   <div>
@@ -16,7 +16,7 @@
 <script>
   import { store } from '../../../data/store'
   export default {
-    name: 'SearchComponent',
+    name: 'SearchBarComponent',
     data(){
       return{
         store

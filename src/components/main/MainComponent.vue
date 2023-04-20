@@ -6,6 +6,7 @@
     <UpcomingComponent />
     <PopularComponent />
     <TopRatedComponent />
+    <SearchComponent />
     <CardInfoComponent />
   </main>
 </template>
@@ -17,6 +18,7 @@
   import UpcomingComponent from '../subMain/pages/UpcomingComponent.vue';
   import PopularComponent from '../subMain/pages/PopularComponent.vue';
   import TopRatedComponent from '../subMain/pages/TopRatedComponent.vue';
+  import SearchComponent from '../subMain/pages/SearchComponent.vue';
   import CardInfoComponent from '../subMain/general/CardInfoComponent.vue';
   import { store } from '../../data/store';
   export default {
@@ -28,7 +30,8 @@
       TvSeriesComponent,
       UpcomingComponent,
       PopularComponent,
-      TopRatedComponent
+      TopRatedComponent,
+      SearchComponent
     },
     data(){
       return{
