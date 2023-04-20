@@ -32,7 +32,7 @@
 <style lang="scss" scoped>
   .carouselCard{
     min-width: 192px;
-    height: 100%;
+    height: 290px;
     cursor: pointer;
     img{
       width: 100%;
