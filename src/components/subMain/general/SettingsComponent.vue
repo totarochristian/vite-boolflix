@@ -11,7 +11,7 @@
       <div id="settingsComponentContent" class="p-4 d-flex flex-column justify-content-center align-items-center">
         <div class="w-100 d-flex gap-4 justify-content-center align-items-center">
           <h5>{{store.settings.languages[store.settings.currentLanguageIndex].settings[1]}}</h5>
-          <select id="languageSelect" class="form-select" v-model="store.settings.currentLanguageIndex" @change="ChangeLanguage">
+          <select id="languageSelect" class="form-select" v-model="store.settings.currentLanguageIndex">
             <option v-for="(lang, index) in store.settings.languages" :selected="index == store.settings.currentLanguageIndex" :value="index">{{ lang.description }}</option>
           </select>
         </div>
@@ -27,11 +27,6 @@
     data(){
       return{
         store
-      }
-    },
-    methods:{
-      ChangeLanguage(){
-        console.log("Lingua cambiata!");
       }
     }
   }

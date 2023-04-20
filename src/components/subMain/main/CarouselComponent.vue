@@ -21,7 +21,8 @@
     name: "CarouselComponent",
     props: {
         endPoint: String,
-        title: String
+        title: String,
+        languageIndex: Number
     },
     data() {
         return {
@@ -31,12 +32,21 @@
                 end: 8
             },
             carouselData: []
-        };
+        }
+    },
+    watch:{
+      languageIndex: function(val){
+        //When the user change the language in the settings, the carousel data will be updated with the watcher of the language idnex
+        this.GetCarouselCardsData();
+      }
     },
     methods: {
         GetCarouselCardsData() {
             let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=" + store.settings.languages[store.settings.currentLanguageIndex].id;
             axios.get(url).then((res) => {
+                //reset the carousel data array
+                this.carouselData = [];
+                //for each data retrieved by the api, add the element in the carousel data, fixing some data problems
                 res.data.results.forEach((data, index) => {
                   data.title = data.title ? data.title : (data.name ? data.name : 'Title not founded');
                   data.overview = data.overview ? data.overview : 'Overview not founded';
