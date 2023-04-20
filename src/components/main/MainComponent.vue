@@ -1,6 +1,6 @@
 <template>
   <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4">
-    <HomeComponent v-if="store.settings.currentMenuSectionIndexOpened == 0" />
+    <HomeComponent />
     <CardInfoComponent />
   </main>
 </template>
