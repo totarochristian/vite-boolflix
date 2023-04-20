@@ -48,8 +48,8 @@
                 this.carouselData = [];
                 //for each data retrieved by the api, add the element in the carousel data, fixing some data problems
                 res.data.results.forEach((data, index) => {
-                  data.title = data.title ? data.title : (data.name ? data.name : 'Title not founded');
-                  data.overview = data.overview ? data.overview : 'Overview not founded';
+                  data.title = data.title ? data.title : (data.name ? data.name : store.settings.languages[store.settings.currentLanguageIndex].errors[0]);
+                  data.overview = data.overview ? data.overview : store.settings.languages[store.settings.currentLanguageIndex].errors[1];
                   this.carouselData.push({ data: data, show: index < 9 ? true : false });
                 });
             }).catch((err) => {
