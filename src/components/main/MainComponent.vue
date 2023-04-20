@@ -4,6 +4,7 @@
     <FilmComponent />
     <TvSeriesComponent />
     <UpcomingComponent />
+    <PopularComponent />
     <CardInfoComponent />
   </main>
 </template>
@@ -13,6 +14,7 @@
   import FilmComponent from '../subMain/pages/FilmComponent.vue';
   import TvSeriesComponent from '../subMain/pages/TvSeriesComponent.vue';
   import UpcomingComponent from '../subMain/pages/UpcomingComponent.vue';
+  import PopularComponent from '../subMain/pages/PopularComponent.vue';
   import CardInfoComponent from '../subMain/general/CardInfoComponent.vue';
   import { store } from '../../data/store';
   export default {
@@ -22,7 +24,8 @@
       HomeComponent,
       FilmComponent,
       TvSeriesComponent,
-      UpcomingComponent
+      UpcomingComponent,
+      PopularComponent
     },
     data(){
       return{
