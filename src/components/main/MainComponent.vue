@@ -3,6 +3,7 @@
     <HomeComponent />
     <FilmComponent />
     <TvSeriesComponent />
+    <UpcomingComponent />
     <CardInfoComponent />
   </main>
 </template>
@@ -11,6 +12,7 @@
   import HomeComponent from '../subMain/pages/HomeComponent.vue';
   import FilmComponent from '../subMain/pages/FilmComponent.vue';
   import TvSeriesComponent from '../subMain/pages/TvSeriesComponent.vue';
+  import UpcomingComponent from '../subMain/pages/UpcomingComponent.vue';
   import CardInfoComponent from '../subMain/general/CardInfoComponent.vue';
   import { store } from '../../data/store';
   export default {
@@ -19,7 +21,8 @@
       CardInfoComponent,
       HomeComponent,
       FilmComponent,
-      TvSeriesComponent
+      TvSeriesComponent,
+      UpcomingComponent
     },
     data(){
       return{
