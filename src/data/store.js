@@ -5,15 +5,19 @@ export const store = reactive({
     languages: [
       {
         id: "it",
+        description: "italian",
         menu: ["Home","Film","Serie TV","In arrivo","Popolari","Più votate"],
         search: "Cerca",
-        carouselsTitles: ["Film popolari","Film più votati","FIlm al cinema","Film in arrivo","Serie TV popolari","Serie TV più votate","Serie TV oggi in onda"]
+        carouselsTitles: ["Film popolari","Film più votati","FIlm al cinema","Film in arrivo","Serie TV popolari","Serie TV più votate","Serie TV oggi in onda"],
+        settings: ["Impostazioni","Seleziona lingua:"]
       },
       {
         id: "en-US",
+        description: "english",
         menu: ["Home","Film","TV series","Upcoming","Popular","Top rated"],
         search: "Search",
-        carouselsTitles: ["Popular movies","Top rated movies","Now playing movies","Upcoming movies","Popular TV shows","Top rated TV shows","TV shows airing today"]
+        carouselsTitles: ["Popular movies","Top rated movies","Now playing movies","Upcoming movies","Popular TV shows","Top rated TV shows","TV shows airing today"],
+        settings: ["Settings","Select language:"]
       }
     ],
     currentLanguageIndex: 1,
@@ -38,10 +42,10 @@ export const store = reactive({
     }
   },
   menuSettings: {
+    isSettingsOpened: false,
     isSectionsOpened: false,
     isSearchBarOpened: false,
-    textToSearch: '',
-    sections: []
+    textToSearch: ''
   },
   selectedCarouselCard: {
     isOpened: false,

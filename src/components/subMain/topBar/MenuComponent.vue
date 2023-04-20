@@ -6,7 +6,7 @@
     </div>
     <div id="menuComponentActions" class="d-flex align-items-center gap-4">
       <i class="fs-4 pe-4 fa-solid fa-magnifying-glass" @click="store.menuSettings.isSearchBarOpened = true"></i>
-      <i class="fs-4 fa-solid fa-ellipsis"></i>
+      <i class="fs-4 fa-solid fa-ellipsis" @click="store.menuSettings.isSettingsOpened = true"></i>
     </div>
   </div>
 </template>
