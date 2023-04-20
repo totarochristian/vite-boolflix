@@ -57,14 +57,14 @@ v [1 ora] Creazione di un componente RenderListComponent:
 v [1 ora] Comporre il main creando più render list in base a cosa si vuole mettere nella home
 
 Milestone 4 - Visualizzazione render list di ricerca [Se va tutto bene 1 ora altrimenti 2 per il fix di bug]
-- [1 ora] Visualizzazione render list di ricerca:
+v [1 ora] Visualizzazione render list di ricerca:
   Con la modifica del campo di ricerca e l'invio, cambiare il contenuto del main visualizzando render list di film e serie tv utilizzando la ricerca sulla base della parola inserita
 
 Milestone 5 - Collegamento con l'offcanvas laterale [Se va tutto bene 1 ora altrimenti 2 per il fix di bug]
 v [1 ora] Al clic su una voce dell'offcanvas visualizzare solo la voce selezionata
 
 Milestone 6 - Con il clic nell'offcanvas aprire film / serie tv / ... senza carosello [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
-- [1 ora] Creare un componente MatrixComponent che visualizza la lista di film / serie tv / ... a matrice e non più a carosello
-- [1 ora] Aggiungere questi componenti e renderli visibili solo al click della relativa voce. Il collegamento del milestone 5 verrà rimosso.
+v [1 ora] Creare un componente MatrixComponent che visualizza la lista di film / serie tv / ... a matrice e non più a carosello
+v [1 ora] Aggiungere questi componenti e renderli visibili solo al click della relativa voce. Il collegamento del milestone 5 verrà rimosso.
   In questo modo nella home verranno visualizzati i caroselli, con il click sulle voci del menù un matrix alla volta.
   Con la ricerca, di nuovo i caroselli generali.
