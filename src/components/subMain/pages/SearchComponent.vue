@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 h-100" :class="{'d-none': (store.settings.currentMenuSectionIndexOpened != -1 || !store.menuSettings.textToSearch) || noResultFounded}">
+  <div class="w-100 h-100 page" :class="{'d-none': (store.settings.currentMenuSectionIndexOpened != -1 || !store.menuSettings.textToSearch) || noResultFounded}">
     <MatrixComponent :searchText="store.menuSettings.textToSearch" :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.film.search" :title="store.settings.languages[store.settings.currentLanguageIndex].search[1]" @no-result-founded="(res) => noResultFounded = res"/>
     <MatrixComponent :searchText="store.menuSettings.textToSearch" :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.tv.search" :title="store.settings.languages[store.settings.currentLanguageIndex].search[2]" @no-result-founded="(res) => noResultFounded = res"/>
   </div>

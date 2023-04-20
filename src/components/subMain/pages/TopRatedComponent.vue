@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 h-100" :class="{'d-none': store.settings.currentMenuSectionIndexOpened != 5}">
+  <div class="w-100 h-100 page" :class="{'d-none': store.settings.currentMenuSectionIndexOpened != 5}">
     <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.film.topRated" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[1]"/>
     <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.tv.topRated" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[5]"/>
   </div>
