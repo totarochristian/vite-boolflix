@@ -4,7 +4,7 @@
     <MatrixComponent :searchText="store.menuSettings.textToSearch" :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.tv.search" :title="store.settings.languages[store.settings.currentLanguageIndex].search[2]"/>
   </div>
   <div class="w-100 h-100 d-flex justify-content-center align-items-center" :class="{'d-none': (store.settings.currentMenuSectionIndexOpened != -1 || store.menuSettings.textToSearch)}">
-    <h5>Inserisci un termine da cercare.</h5>
+    <h5>{{ store.settings.languages[store.settings.currentLanguageIndex].search[3] }}</h5>
   </div>
 </template>
 
