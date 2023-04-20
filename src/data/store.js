@@ -7,7 +7,7 @@ export const store = reactive({
         id: "it",
         description: "italian",
         menu: ["Home","Film","Serie TV","In arrivo","Popolari","Più votate"],
-        search: ["Cerca","Film","Serie TV","Inserisci un termine da cercare."],
+        search: ["Cerca","Film","Serie TV","Inserisci un termine da cercare.","Nessun risultato per la tua ricerca di "],
         carouselsTitles: ["Film popolari","Film più votati","FIlm al cinema","Film in arrivo","Serie TV popolari","Serie TV più votate","Serie TV oggi in onda"],
         settings: ["Impostazioni","Seleziona lingua:"],
         errors: ["Titolo non trovato","Descrizione non trovata"]
@@ -16,7 +16,7 @@ export const store = reactive({
         id: "en-US",
         description: "english",
         menu: ["Home","Movies","TV series","Upcoming","Popular","Top rated"],
-        search: ["Search","Movies","TV series","Enter a search term."],
+        search: ["Search","Movies","TV series","Enter a search term.","No results for your search for "],
         carouselsTitles: ["Popular movies","Top rated movies","Now playing movies","Upcoming movies","Popular TV shows","Top rated TV shows","TV shows airing today"],
         settings: ["Settings","Select language:"],
         errors: ["Title not founded","Overview not founded"]

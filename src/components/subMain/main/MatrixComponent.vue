@@ -1,5 +1,5 @@
 <template>
-  <div class="matrixarousel d-flex flex-column">
+  <div class="matrixCarousel d-flex flex-column" v-if="carouselData.length>0">
     <h4>{{ title }}</h4>
     <div class="matrixImages d-flex justify-content-center align-items-center flex-wrap gap-3">
       <CarouselCardComponent v-for="cardData in carouselData" :card-data="cardData"/>
@@ -58,6 +58,7 @@
                 console.log(err);
             }).finally(() => {
                 //code to execute ever
+                this.$emit('noResultFounded',!(this.carouselData.length>0));
             });
         }
     },
