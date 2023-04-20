@@ -81,7 +81,7 @@
             let sizeOneCard = 192;
             let numOfElementsToShow = Math.trunc(width / sizeOneCard);
             let tmpNewEnd = this.offset.start + numOfElementsToShow;
-            this.offset.start = tmpNewEnd < this.carouselData.length ? this.offset.start : (this.carouselData.length - 2 - numOfElementsToShow >= 0 ? this.carouselData.length - 2 - numOfElementsToShow : 0);
+            this.offset.start = tmpNewEnd < this.carouselData.length ? this.offset.start : (this.carouselData.length - 2 - numOfElementsToShow >= 0 ? this.carouselData.length - numOfElementsToShow : 0);
             this.offset.end = this.offset.start + numOfElementsToShow - 1;
             this.ShowNextPrev(0);
           }
