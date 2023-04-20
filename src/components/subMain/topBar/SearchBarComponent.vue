@@ -32,14 +32,14 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2000;
+    z-index: 500;
     overflow: hidden;
   }
   #searchComponent{
     position: relative;
     top: 0;
     left: 0;
-    z-index: 3000;
+    z-index: 1000;
     i{
       cursor: pointer;
     }
