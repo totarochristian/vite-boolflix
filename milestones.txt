@@ -36,16 +36,16 @@ v [30 min] Creazione del componente base denominato CarouselCardComponent:
     vv tramite le props viene passato un oggetto rappresentante il film / serie tv
     vv grandezza predefinita
     vv al clic dovrà essere aperta una modale al centro dello schermo con i dati del film / serie tv cliccato
-- [1 ora] Creazione di un componente base denominato CardInfoComponent:
+v [1 ora] Creazione di un componente base denominato CardInfoComponent:
   questo componente verrà utilizzato per visualizzare le info di un film / serie tv selezionato.
   Sarà unico all'interno del componente main, sarà sempre invisibile fino a quando un CarouselCardComponent non verrà cliccato.
   Feature:
     vv lo store conterrà un oggetto che si riferisce ai dati di un film / serie tv cliccato
     vv lo store conterrà una variabile booleana che permetterà la visualizzazione di questo componente
     vv per renderlo invisibile ci sarà una x in alto a destra
-- [1 ora] Test vari:
-    -- con un array finto ottenuto tramite postman, simula un carosello dentro il main
-    -- prova l'apertura e chiusura del componente CardInfoComponent tramite clic di un CarouselCardComponent
+v [1 ora] Test vari:
+    vv con un array finto ottenuto tramite postman, simula un carosello dentro il main
+    vv prova l'apertura e chiusura del componente CardInfoComponent tramite clic di un CarouselCardComponent
 
 Milestone 3 - Creazione dei render list dinamici [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
 - [1 ora] Creazione di un componente RenderListComponent:

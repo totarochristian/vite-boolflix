@@ -7,7 +7,13 @@
         <h3 class="px-4">{{ store.selectedCarouselCard.carouselCardData.title }}</h3>
         <span></span>
       </div>
-      <div id="cardInfoComponentContent">
+      <div id="cardInfoComponentContent" class="w-100 p-4">
+        <div class="w-100 p-4 d-flex justify-content-between align-items-center flex-wrap">
+          <StarsComponent :voteAverage="store.selectedCarouselCard.carouselCardData.vote_average"/>
+          <span v-if="store.selectedCarouselCard.carouselCardData.release_date">{{('' + store.selectedCarouselCard.carouselCardData.release_date).substring(0,4)}}</span>
+          <span v-if="store.selectedCarouselCard.carouselCardData.first_air_date">{{('' + store.selectedCarouselCard.carouselCardData.first_air_date).substring(0,4)}}</span>
+          <span class="adultOnly px-1" v-if="store.selectedCarouselCard.carouselCardData.adult">18+</span>
+        </div>
         <p class="p-4">{{ store.selectedCarouselCard.carouselCardData.overview }}</p>
       </div>
     </div>
@@ -16,6 +22,7 @@
 
 <script>
   import { store } from '../../../data/store';
+  import StarsComponent from './StarsComponent.vue';
   export default {
     name: 'CardInfoComponent',
     data(){
@@ -28,6 +35,9 @@
         let tmp = data.backdrop_path ? store.apiSettings.imageBaseUrl + data.backdrop_path : "/images/Image_not_available_hor.png";
         return tmp;
       }
+    },
+    components:{
+      StarsComponent
     }
   }
 </script>
@@ -83,6 +93,11 @@
           &:hover{
             transform: scale(1.2);
           }
+        }
+      }
+      #cardInfoComponentContent{
+        .adultOnly{
+          border: 1px solid;
         }
       }
     }
