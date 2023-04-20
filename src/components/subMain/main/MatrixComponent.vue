@@ -16,6 +16,8 @@
     props: {
         endPoint: String,
         title: String,
+        languageIndex: Number,
+        searchText: String,
         languageIndex: Number
     },
     data() {
@@ -28,9 +30,21 @@
             carouselData: []
         }
     },
+    watch:{
+      languageIndex: function(val){
+        //When the user change the language in the settings, the carousel data will be updated with the watcher of the language index
+        this.GetCarouselCardsData();
+      },
+      searchText: function(val){
+        //When the user change the search text in the settings, the matrix data will be updated with the watcher of the searchText
+        this.GetCarouselCardsData();
+      }
+    },
     methods: {
         GetCarouselCardsData() {
             let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=" + store.settings.languages[store.settings.currentLanguageIndex].id;
+            if(this.searchText)
+              url+="&query="+this.searchText;
             axios.get(url).then((res) => {
                 //reset the carousel data array
                 this.carouselData = [];

@@ -7,7 +7,7 @@ export const store = reactive({
         id: "it",
         description: "italian",
         menu: ["Home","Film","Serie TV","In arrivo","Popolari","Più votate"],
-        search: "Cerca",
+        search: ["Cerca","Film","Serie TV"],
         carouselsTitles: ["Film popolari","Film più votati","FIlm al cinema","Film in arrivo","Serie TV popolari","Serie TV più votate","Serie TV oggi in onda"],
         settings: ["Impostazioni","Seleziona lingua:"],
         errors: ["Titolo non trovato","Descrizione non trovata"]
@@ -15,8 +15,8 @@ export const store = reactive({
       {
         id: "en-US",
         description: "english",
-        menu: ["Home","Film","TV series","Upcoming","Popular","Top rated"],
-        search: "Search",
+        menu: ["Home","Movies","TV series","Upcoming","Popular","Top rated"],
+        search: ["Search","Movies","TV series"],
         carouselsTitles: ["Popular movies","Top rated movies","Now playing movies","Upcoming movies","Popular TV shows","Top rated TV shows","TV shows airing today"],
         settings: ["Settings","Select language:"],
         errors: ["Title not founded","Overview not founded"]
@@ -34,12 +34,14 @@ export const store = reactive({
         popular: 'movie/popular/',
         topRated: 'movie/top_rated/',
         nowPlaying: 'movie/now_playing',
-        upcoming: 'movie/upcoming'
+        upcoming: 'movie/upcoming',
+        search: 'search/movie'
       },
       tv: {
         popular: 'tv/popular/',
         topRated: 'tv/top_rated/',
-        airingToday: 'tv/airing_today'
+        airingToday: 'tv/airing_today',
+        search: 'search/tv'
       }
     }
   },

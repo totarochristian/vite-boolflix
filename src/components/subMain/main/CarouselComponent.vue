@@ -36,7 +36,7 @@
     },
     watch:{
       languageIndex: function(val){
-        //When the user change the language in the settings, the carousel data will be updated with the watcher of the language idnex
+        //When the user change the language in the settings, the carousel data will be updated with the watcher of the language index
         this.GetCarouselCardsData();
       }
     },

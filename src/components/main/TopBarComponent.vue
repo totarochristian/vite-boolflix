@@ -3,7 +3,7 @@
     <MenuComponent v-if="!store.menuSettings.isSearchBarOpened"/>
     <SearchBarComponent v-if="store.menuSettings.isSearchBarOpened"/>
     <SectionsComponent v-if="store.menuSettings.isSectionsOpened"/>
-    <SettingsComponent v-if="store.menuSettings.isSettingsOpened" @settings-changed="$emit('settingsChanged')"/>
+    <SettingsComponent v-if="store.menuSettings.isSettingsOpened"/>
   </header>
 </template>
 

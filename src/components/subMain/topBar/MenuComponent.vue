@@ -5,7 +5,7 @@
       <h3 class="fw-bold">Boolflix</h3>
     </div>
     <div id="menuComponentActions" class="d-flex align-items-center gap-4">
-      <i class="fs-4 pe-4 fa-solid fa-magnifying-glass" @click="store.menuSettings.isSearchBarOpened = true"></i>
+      <i class="fs-4 pe-4 fa-solid fa-magnifying-glass" @click="ShowSearchBar"></i>
       <i class="fs-4 fa-solid fa-ellipsis" @click="store.menuSettings.isSettingsOpened = true"></i>
     </div>
   </div>
@@ -18,6 +18,13 @@
     data(){
       return{
         store
+      }
+    },
+    methods:{
+      ShowSearchBar(){
+        store.menuSettings.isSearchBarOpened = true;
+        if(store.menuSettings.textToSearch)
+          store.settings.currentMenuSectionIndexOpened = -1;
       }
     }
   }
