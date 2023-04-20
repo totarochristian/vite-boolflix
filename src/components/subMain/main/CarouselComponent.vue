@@ -89,6 +89,8 @@
     },
     mounted() {
       this.GetCarouselCardsData();
+    },
+    updated(){
       this.ScreenSizeChanged();
     },
     components: { CarouselCardComponent },
