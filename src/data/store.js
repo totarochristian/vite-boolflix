@@ -22,7 +22,7 @@ export const store = reactive({
         errors: ["Title not founded","Overview not founded"]
       }
     ],
-    currentLanguageIndex: 1,
+    currentLanguageIndex: 0,
     currentMenuSectionIndexOpened: 0
   },
   apiSettings: {
