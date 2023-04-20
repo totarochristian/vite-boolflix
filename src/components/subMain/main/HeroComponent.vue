@@ -41,7 +41,6 @@
             this.moviesIdList.forEach((movieId)=>{
               let url = store.apiSettings.baseUrl + store.apiSettings.endPoints.film.base + movieId + "/videos?api_key=" + store.apiSettings.apiKey + "&language=" + store.settings.languages[store.settings.currentLanguageIndex].id;
               axios.get(url).then((res) => {
-                console.log(res.data);
                   //for each data retrieved by the api, add the first key of a teaser or trailer in the list of youtube video key
                   for(let i=0; i<res.data.results.length; i++){
                     if(res.data.results[i].type=="Teaser" || res.data.results[i].type=="Trailer"){

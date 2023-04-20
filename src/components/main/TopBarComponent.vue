@@ -30,5 +30,10 @@
 </script>
 
 <style lang="scss" scoped>
-
+  header:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="youtubeVideo">
-    <iframe :src="'https://www.youtube.com/embed/'+videoKey+'?autoplay=1&loop=1&controls=1&mute='+mute+'&enablejsapi=1&rel=0&playlist='+playlist" frameborder="0"></iframe>
+    <iframe :src="'https://www.youtube.com/embed/'+videoKey+'?autoplay=1&loop=1&controls=1&mute='+mute+'&enablejsapi=1&rel=0&playlist='+playlist" frameborder="0" allowfullscreen></iframe>
   </div>
 </template>
 
