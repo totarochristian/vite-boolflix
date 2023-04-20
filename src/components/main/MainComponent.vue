@@ -1,12 +1,12 @@
 <template>
   <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4">
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.popular" title="Popular movies"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.topRated" title="Top rated movies"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.nowPlaying" title="Now playing movies"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.upcoming" title="Upcoming movies"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.popular" title="Popular TV shows"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.topRated" title="Top rated TV shows"/>
-    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.airingToday" title="TV shows airing today"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.popular" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[0]"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.topRated" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[1]"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.nowPlaying" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[2]"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.film.upcoming" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[3]"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.popular" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[4]"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.topRated" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[5]"/>
+    <CarouselComponent :endPoint="store.apiSettings.endPoints.tv.airingToday" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[6]"/>
 
     <CardInfoComponent />
   </main>

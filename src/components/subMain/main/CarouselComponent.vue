@@ -35,7 +35,7 @@
     },
     methods: {
         GetCarouselCardsData() {
-            let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=en-US";
+            let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=" + store.settings.languages[store.settings.currentLanguageIndex].id;
             axios.get(url).then((res) => {
                 res.data.results.forEach((data, index) => {
                   data.title = data.title ? data.title : (data.name ? data.name : 'Title not founded');

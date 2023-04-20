@@ -4,8 +4,8 @@
       <i class="fs-4 fa-solid fa-xmark" @click="store.menuSettings.isSectionsOpened = false"></i>
     </div>
     <div id="sectionsComponentContent" class="d-flex flex-column justify-content-center align-items-center">
-      <div v-for="section in store.menuSettings.sections" class="fs-5 col-12 section px-4 py-3" :class="{'active fw-bold': section.isActive}" @click="ChangeActiveSection(section.name)">
-        {{ section.name }}
+      <div v-for="(section, index) in store.settings.languages[store.settings.currentLanguageIndex].menu" class="fs-5 col-12 section px-4 py-3" :class="{'active fw-bold': index == store.settings.currentMenuSectionIndexOpened}" @click="ChangeActiveSection(index)">
+        {{ section }}
       </div>
     </div>
   </div>
@@ -21,10 +21,8 @@
       }
     },
     methods:{
-      ChangeActiveSection(name){
-        store.menuSettings.sections.forEach((section) => {
-          section.isActive = section.name != name ? false : true;
-        });
+      ChangeActiveSection(index){
+        store.settings.currentMenuSectionIndexOpened = index;
       }
     }
   }
