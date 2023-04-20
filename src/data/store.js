@@ -23,7 +23,8 @@ export const store = reactive({
       }
     ],
     currentLanguageIndex: 0,
-    currentMenuSectionIndexOpened: 0
+    currentMenuSectionIndexOpened: 0,
+    previousMenuSectionIndexOpened: 0
   },
   apiSettings: {
     apiKey: 'd93c8fdeed5c57d0324a3c09acc8dd75',

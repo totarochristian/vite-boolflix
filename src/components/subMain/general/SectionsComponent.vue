@@ -24,6 +24,7 @@
     methods:{
       ChangeActiveSection(index){
         store.menuSettings.isSectionsOpened = false;
+        store.settings.previousMenuSectionIndexOpened = store.settings.currentMenuSectionIndexOpened;
         store.settings.currentMenuSectionIndexOpened = index;
       }
     }

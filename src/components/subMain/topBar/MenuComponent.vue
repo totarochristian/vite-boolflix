@@ -22,9 +22,12 @@
     },
     methods:{
       ShowSearchBar(){
+        store.settings.previousMenuSectionIndexOpened = store.settings.currentMenuSectionIndexOpened;
         store.menuSettings.isSearchBarOpened = true;
-        if(store.menuSettings.textToSearch)
+        if(store.menuSettings.textToSearch){
           store.settings.currentMenuSectionIndexOpened = -1;
+        }
+          
       }
     }
   }

@@ -3,7 +3,7 @@
   </div>
   <div id="searchComponent" class="p-4 d-flex justify-content-center align-items-center">
       <div id="searchComponentBack" class="ps-4 d-flex align-items-center gap-4">
-        <i class="fs-4 fa-solid fa-arrow-left" @click="store.menuSettings.isSearchBarOpened = false; store.settings.currentMenuSectionIndexOpened = 0;"></i>
+        <i class="fs-4 fa-solid fa-arrow-left" @click="ExitPage"></i>
       </div>
       <div id="searchComponentActions" class="d-flex align-items-center gap-1">
         <i class="fs-4 fa-solid fa-magnifying-glass"></i>
@@ -19,6 +19,12 @@
     data(){
       return{
         store
+      }
+    },
+    methods:{
+      ExitPage(){
+        store.menuSettings.isSearchBarOpened = false;
+        store.settings.currentMenuSectionIndexOpened = store.settings.previousMenuSectionIndexOpened;
       }
     }
   }
