@@ -1,26 +1,19 @@
 <template>
   <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4">
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.film.popular" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[0]"/>
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.film.topRated" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[1]"/>
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.film.nowPlaying" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[2]"/>
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.film.upcoming" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[3]"/>
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.tv.popular" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[4]"/>
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.tv.topRated" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[5]"/>
-    <CarouselComponent :languageIndex="store.settings.currentLanguageIndex" :endPoint="store.apiSettings.endPoints.tv.airingToday" :title="store.settings.languages[store.settings.currentLanguageIndex].carouselsTitles[6]"/>
-
+    <HomeComponent v-if="store.settings.currentMenuSectionIndexOpened == 0" />
     <CardInfoComponent />
   </main>
 </template>
 
 <script>
-  import CarouselComponent from '../subMain/main/CarouselComponent.vue';
+  import HomeComponent from '../subMain/pages/HomeComponent.vue';
   import CardInfoComponent from '../subMain/general/CardInfoComponent.vue';
   import { store } from '../../data/store';
   export default {
     name: 'MainComponent',
     components:{
-      CarouselComponent,
-      CardInfoComponent
+      CardInfoComponent,
+      HomeComponent
     },
     data(){
       return{
