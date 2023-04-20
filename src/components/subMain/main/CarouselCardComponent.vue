@@ -18,7 +18,7 @@
     },
     methods:{
       GetImageUrl(data){
-        let tmp = store.apiSettings.imageBaseUrl + data.poster_path;
+        let tmp = data.poster_path ? store.apiSettings.imageBaseUrl + data.poster_path : "/images/Image_not_available_vert.png";
         return tmp;
       },
       OpenCardInfo(){

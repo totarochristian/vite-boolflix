@@ -25,7 +25,7 @@
     },
     methods:{
       GetImageUrl(data){
-        let tmp = store.apiSettings.imageBaseUrl + data.backdrop_path;
+        let tmp = data.backdrop_path ? store.apiSettings.imageBaseUrl + data.backdrop_path : "/images/Image_not_available_hor.png";
         return tmp;
       }
     }

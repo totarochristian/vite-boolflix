@@ -38,7 +38,9 @@
             let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=en-US";
             axios.get(url).then((res) => {
                 res.data.results.forEach((data, index) => {
-                    this.carouselData.push({ data: data, show: index < 9 ? true : false });
+                  data.title = data.title ? data.title : (data.name ? data.name : 'Title not founded');
+                  data.overview = data.overview ? data.overview : 'Overview not founded';
+                  this.carouselData.push({ data: data, show: index < 9 ? true : false });
                 });
             }).catch((err) => {
                 console.log(err);
