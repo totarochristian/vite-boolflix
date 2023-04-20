@@ -1,5 +1,5 @@
 <template>
-  <div id="cardInfoClosingDiv" :class="{'d-none': !store.selectedCarouselCard.isOpened}" @click="store.selectedCarouselCard.isOpened = false" v-if="store.selectedCarouselCard.carouselCardData">
+  <div id="cardInfoClosingDiv" :class="{'d-none': !store.selectedCarouselCard.isOpened}" @click.self="store.selectedCarouselCard.isOpened = false" v-if="store.selectedCarouselCard.carouselCardData">
     <div id="cardInfoComponent" class="col-11 col-md-8 col-lg-5 d-flex flex-column justify-content-start align-items-center">
       <div id="cardInfoComponentHeader">
         <i class="fs-3 fa-solid fa-xmark" @click="store.selectedCarouselCard.isOpened = false"></i>
