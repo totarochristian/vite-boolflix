@@ -2,7 +2,7 @@
   <div id="menuComponent" class="p-4 d-flex justify-content-between align-items-center">
     <div id="menuComponentTitle" class="d-flex align-items-center gap-4">
       <i class="fs-4 fa-solid fa-bars text-white" @click="store.menuSettings.isSectionsOpened = true"></i>
-      <h3>Boolflix</h3>
+      <h3 class="fw-bold">Boolflix</h3>
     </div>
     <div id="menuComponentActions" class="d-flex align-items-center gap-4">
       <i class="fs-4 pe-4 fa-solid fa-magnifying-glass" @click="store.menuSettings.isSearchBarOpened = true"></i>
