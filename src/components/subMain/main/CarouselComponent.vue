@@ -78,7 +78,6 @@
           const element = this.$refs.myElement;
           if(element && element.offsetWidth){
             const width = element.offsetWidth;
-            console.log("Nuova width: " + width);
             let sizeOneCard = 192;
             let numOfElementsToShow = Math.trunc(width / sizeOneCard);
             let tmpNewEnd = this.offset.start + numOfElementsToShow;

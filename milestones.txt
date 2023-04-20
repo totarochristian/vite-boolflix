@@ -48,20 +48,20 @@ v [1 ora] Test vari:
     vv prova l'apertura e chiusura del componente CardInfoComponent tramite clic di un CarouselCardComponent
 
 Milestone 3 - Creazione dei render list dinamici [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
-- [1 ora] Creazione di un componente RenderListComponent:
+v [1 ora] Creazione di un componente RenderListComponent:
   questo componente richiamerà semplicemente un carosello passandogli una lista di film / serie tv / ... da visualizzare.
   Feature:
-    -- tramite props viene passato l'url da chiamare (API)
-    -- verrà fatta una chiamata ad un API per ottenere la lista di film
-    -- contiene un carosello a cui viene passata la lista di film ottenuta con axios
-- [1 ora] Comporre il main creando più render list in base a cosa si vuole mettere nella home
+    vv tramite props viene passato l'url da chiamare (API)
+    vv verrà fatta una chiamata ad un API per ottenere la lista di film
+    vv contiene un carosello a cui viene passata la lista di film ottenuta con axios
+v [1 ora] Comporre il main creando più render list in base a cosa si vuole mettere nella home
 
 Milestone 4 - Visualizzazione render list di ricerca [Se va tutto bene 1 ora altrimenti 2 per il fix di bug]
 - [1 ora] Visualizzazione render list di ricerca:
-  Con la modifica del campo di ricerca e l'invio, cambiare il contenuto del main visualizzando render list di film e serie tv utilizzando la ricerca sulla base della paroal inserita
+  Con la modifica del campo di ricerca e l'invio, cambiare il contenuto del main visualizzando render list di film e serie tv utilizzando la ricerca sulla base della parola inserita
 
 Milestone 5 - Collegamento con l'offcanvas laterale [Se va tutto bene 1 ora altrimenti 2 per il fix di bug]
-- [1 ora] Al clic su una voce dell'offcanvas visualizzare solo la voce selezionata
+v [1 ora] Al clic su una voce dell'offcanvas visualizzare solo la voce selezionata
 
 Milestone 6 - Con il clic nell'offcanvas aprire film / serie tv / ... senza carosello [Se va tutto bene 2 ore altrimenti 3 per il fix di bug]
 - [1 ora] Creare un componente MatrixComponent che visualizza la lista di film / serie tv / ... a matrice e non più a carosello
