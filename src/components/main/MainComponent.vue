@@ -1,5 +1,5 @@
 <template>
-  <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4">
+  <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4" @scroll="handleScroll">
     <HomeComponent />
     <FilmComponent />
     <TvSeriesComponent />
@@ -36,6 +36,11 @@
     data(){
       return{
         store
+      }
+    },
+    methods: {
+      handleScroll(event) {
+        store.menuSettings.isScrollOnTop = event.currentTarget.scrollTop <= 0;
       }
     }
   }

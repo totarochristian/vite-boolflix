@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{'bg-black': !store.menuSettings.isScrollOnTop}">
     <MenuComponent v-if="!store.menuSettings.isSearchBarOpened"/>
     <SearchBarComponent v-if="store.menuSettings.isSearchBarOpened"/>
     <SectionsComponent v-if="store.menuSettings.isSectionsOpened"/>
@@ -35,5 +35,6 @@
     top: 0;
     left: 0;
     z-index: 500;
+    transition: all 0.15s linear;
   }
 </style>

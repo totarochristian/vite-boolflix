@@ -23,7 +23,8 @@
     },
     data(){
       return{
-        store
+        store,
+        scroll: null
       }
     }
   }

@@ -48,6 +48,7 @@ export const store = reactive({
     }
   },
   menuSettings: {
+    isScrollOnTop: true,
     isSettingsOpened: false,
     isSectionsOpened: false,
     isSearchBarOpened: false,
