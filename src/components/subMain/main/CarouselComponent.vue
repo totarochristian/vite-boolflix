@@ -42,7 +42,7 @@
     },
     methods: {
         GetCarouselCardsData() {
-            let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=" + store.settings.languages[store.settings.currentLanguageIndex].id;
+            let url = store.apiSettings.baseUrl + this.endPoint + "?api_key=" + store.apiSettings.apiKey + "&language=" + store.settings.languages[store.settings.currentLanguageIndex].id+"/";
             axios.get(url).then((res) => {
                 //reset the carousel data array
                 this.carouselData = [];
