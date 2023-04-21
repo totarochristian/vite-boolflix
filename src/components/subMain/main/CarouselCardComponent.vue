@@ -9,18 +9,25 @@
       </div>
       <div class="flip-card-back p-3">
         <h5>{{cardData.data.title}}</h5> 
-        <p>{{GetOverviewString()}}</p> 
+        <p>{{GetOverviewString()}}</p>
+        <StarsComponent :voteAverage="cardData.data.vote_average" class="justify-content-center mb-3"/>
+        <p v-if="cardData.data.release_date">{{('' + cardData.data.release_date).substring(0,4)}}</p>
+        <p v-if="cardData.data.first_air_date">{{('' + cardData.data.first_air_date).substring(0,4)}}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import StarsComponent from '../general/StarsComponent.vue';
   import { store } from '../../../data/store';
   export default {
     name: 'CarouselCardComponent',
     props:{
       cardData: Object
+    },
+    components:{
+      StarsComponent
     },
     data(){
       return{
