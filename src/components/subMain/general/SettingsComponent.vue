@@ -9,11 +9,19 @@
         </div>
       </div>
       <div id="settingsComponentContent" class="p-4 d-flex flex-column justify-content-center align-items-center">
-        <div class="w-100 d-flex gap-4 justify-content-center align-items-center">
-          <h5>{{store.settings.languages[store.settings.currentLanguageIndex].settings[1]}}</h5>
-          <select id="languageSelect" class="form-select" v-model="store.settings.currentLanguageIndex">
-            <option v-for="(lang, index) in store.settings.languages" :selected="index == store.settings.currentLanguageIndex" :value="index">{{ lang.description }}</option>
-          </select>
+        <div class="w-100 p-2 d-flex gap-3 justify-content-center align-items-start flex-column">
+          <div class="form-check d-flex gap-3 justify-content-center">
+            <input class="form-check-input" type="checkbox" v-model="store.menuSettings.showMoreInfoInCarouselCard" id="showMoreInfoInCarouselCard">
+            <label class="form-check-label" for="flexCheckChecked">
+              <h5>Mostra info nella preview di film / serie tv</h5>
+            </label>
+          </div>
+          <div class="d-flex gap-3 justify-content-center align-items-center">
+            <h5>{{store.settings.languages[store.settings.currentLanguageIndex].settings[1]}}</h5>
+            <select id="languageSelect" class="form-select" v-model="store.settings.currentLanguageIndex">
+              <option v-for="(lang, index) in store.settings.languages" :selected="index == store.settings.currentLanguageIndex" :value="index">{{ lang.description }}</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
