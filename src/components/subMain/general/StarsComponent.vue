@@ -14,15 +14,25 @@
     },
     data(){
       return{
+        maxStarsToDisplay: 5,
         filledStar: 0,
         halfStar: 0,
         emptyStar: 0
       }
     },
+    methods:{
+      DefineNumberOfStars(){
+        let voteTemp = (this.voteAverage * this.maxStarsToDisplay) / 10;
+        this.filledStar = Math.trunc(voteTemp);
+        this.halfStar = voteTemp % 1 >= 0.5;
+        this.emptyStar = this.maxStarsToDisplay - this.filledStar - this.halfStar;
+      }
+    },
+    updated(){
+      this.DefineNumberOfStars();
+    },
     mounted(){
-      this.filledStar = Math.trunc(this.voteAverage);
-      this.halfStar = this.voteAverage % 1 >= 0.5;
-      this.emptyStar = 10 - this.filledStar - this.halfStar;
+      this.DefineNumberOfStars();
     }
   }
 </script>
