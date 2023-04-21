@@ -10,7 +10,7 @@ export const store = reactive({
         search: ["Cerca","Film","Serie TV","Inserisci un termine da cercare.","Nessun risultato per la tua ricerca di "],
         carouselsTitles: ["Film popolari","Film più votati","FIlm al cinema","Film in arrivo","Serie TV popolari","Serie TV più votate","Serie TV oggi in onda"],
         settings: ["Impostazioni","Seleziona lingua:","Mostra info nella preview di film / serie TV"],
-        errors: ["Titolo non trovato","Descrizione non trovata"]
+        errors: ["Titolo non trovato","Descrizione non trovata, prova a cambiare lingua!"]
       },
       {
         id: "en-US",
@@ -19,7 +19,7 @@ export const store = reactive({
         search: ["Search","Movies","TV series","Enter a search term.","No results for your search for "],
         carouselsTitles: ["Popular movies","Top rated movies","Now playing movies","Upcoming movies","Popular TV shows","Top rated TV shows","TV shows airing today"],
         settings: ["Settings","Select language:","Show info in movie / TV series preview"],
-        errors: ["Title not founded","Overview not founded"]
+        errors: ["Title not founded","Overview not founded, try to change language!"]
       }
     ],
     currentLanguageIndex: 0,
