@@ -1,5 +1,5 @@
 <template>
-  <YoutubeVideoComponent :videoKey="youtubeVideoKeyList[0]" :playlist="playlistString"/>
+  <YoutubeVideoComponent id="heroVideo" :videoKey="youtubeVideoKeyList[0]" :playlist="playlistString"/>
 </template>
 
 <script>
@@ -69,5 +69,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+  #heroVideo{
+    height: 80vh;
+  }
 </style>

@@ -60,6 +60,7 @@ export const store = reactive({
   },
   selectedCarouselCard: {
     isOpened: false,
+    playVideos: false,
     carouselCardData: null
   }
 });

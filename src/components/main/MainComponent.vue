@@ -7,7 +7,7 @@
     <PopularComponent />
     <TopRatedComponent />
     <SearchComponent />
-    <CardInfoComponent />
+    <CardInfoComponent :card="store.selectedCarouselCard.carouselCardData" />
   </main>
 </template>
 
