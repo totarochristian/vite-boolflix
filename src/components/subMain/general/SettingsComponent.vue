@@ -52,7 +52,7 @@
     z-index: 2000;
     overflow: hidden;
     #settingsComponent{
-      width: 530px;
+      max-width: 530px;
       height: 60%;
       position: relative;
       top: 50%;
