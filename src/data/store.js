@@ -53,7 +53,8 @@ export const store = reactive({
     isSettingsOpened: false,
     isSectionsOpened: false,
     isSearchBarOpened: false,
-    textToSearch: ''
+    textToSearch: '',
+    showMoreInfoInCarouselCard: true
   },
   selectedCarouselCard: {
     isOpened: false,
