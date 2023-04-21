@@ -26,7 +26,7 @@
   .youtubeVideo{
     iframe{
       width: 100%;
-      height: 86vh;
+      height: 80vh;
       object-fit: cover;
     }
   }
