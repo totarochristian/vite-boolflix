@@ -11,8 +11,11 @@
         <h5>{{cardData.data.title}}</h5> 
         <p>{{GetOverviewString()}}</p>
         <StarsComponent :voteAverage="cardData.data.vote_average" class="justify-content-center mb-3"/>
-        <p v-if="cardData.data.release_date">{{('' + cardData.data.release_date).substring(0,4)}}</p>
-        <p v-if="cardData.data.first_air_date">{{('' + cardData.data.first_air_date).substring(0,4)}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span v-if="cardData.data.release_date">{{('' + cardData.data.release_date).substring(0,4)}}</span>
+          <span v-if="cardData.data.first_air_date">{{('' + cardData.data.first_air_date).substring(0,4)}}</span>
+          <img class="flag" :src="'/images/flags/'+cardData.data.original_language+'.svg'" :alt="cardData.data.original_language+' flag'">
+        </div>
       </div>
     </div>
   </div>
@@ -46,7 +49,7 @@
       GetOverviewString(){
         let stringVar = this.cardData.data.overview;
         if(this.cardData.data.title.length + this.cardData.data.overview.length > 100)
-          stringVar = stringVar.substring(0,(99 - this.cardData.data.title.length)) + " [...]";
+          stringVar = stringVar.substring(0,(80 - this.cardData.data.title.length)) + " [...]";
         return stringVar;
       }
     }
@@ -64,6 +67,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    .flag{
+      width: 30px;
+      height: auto;
     }
   }
   .flip-card {
