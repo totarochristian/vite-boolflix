@@ -21,7 +21,7 @@
         <div class="w-100 p-4 d-flex justify-content-center align-items-center flex-wrap gap-4">
           <div class="d-flex justify-content-between align-items-center flex-column">
             <span class="fs-5 fw-bold mb-2">{{store.settings.languages[store.settings.currentLanguageIndex].cardInfo[0]}}</span>
-            <span>{{ store.selectedCarouselCard.carouselCardData.original_title }}</span>
+            <span>{{ store.selectedCarouselCard.carouselCardData.original_title ? store.selectedCarouselCard.carouselCardData.original_title : store.selectedCarouselCard.carouselCardData.title }}</span>
           </div>
           <div class="d-flex justify-content-between align-items-center flex-column">
             <span class="fs-5 fw-bold mb-2">{{store.settings.languages[store.settings.currentLanguageIndex].cardInfo[1]}}</span>
