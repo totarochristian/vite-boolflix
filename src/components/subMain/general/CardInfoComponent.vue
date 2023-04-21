@@ -14,7 +14,20 @@
           <span v-if="store.selectedCarouselCard.carouselCardData.first_air_date">{{('' + store.selectedCarouselCard.carouselCardData.first_air_date).substring(0,4)}}</span>
           <span class="adultOnly px-1" v-if="store.selectedCarouselCard.carouselCardData.adult">18+</span>
         </div>
-        <p class="p-4">{{ store.selectedCarouselCard.carouselCardData.overview }}</p>
+        <div class="w-100 p-4 d-flex justify-content-center align-items-center flex-wrap gap-4">
+          <div class="d-flex justify-content-between align-items-center flex-column">
+            <span class="fs-5 fw-bold mb-2">{{store.settings.languages[store.settings.currentLanguageIndex].cardInfo[0]}}</span>
+            <span>{{ store.selectedCarouselCard.carouselCardData.original_title }}</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center flex-column">
+            <span class="fs-5 fw-bold mb-2">{{store.settings.languages[store.settings.currentLanguageIndex].cardInfo[1]}}</span>
+            <img class="flag" :src="'/images/flags/'+store.selectedCarouselCard.carouselCardData.original_language+'.svg'" :alt="store.selectedCarouselCard.carouselCardData.original_language+' flag'">
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center flex-column">
+          <span class="fs-5 fw-bold">{{store.settings.languages[store.settings.currentLanguageIndex].cardInfo[2]}}</span>
+          <p class="p-4">{{ store.selectedCarouselCard.carouselCardData.overview }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -96,8 +109,13 @@
         }
       }
       #cardInfoComponentContent{
+        overflow-y: auto;
         .adultOnly{
           border: 1px solid;
+        }
+        .flag{
+          width: 30px;
+          height: auto;
         }
       }
     }
