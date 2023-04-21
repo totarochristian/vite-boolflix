@@ -30,8 +30,8 @@ export const store = reactive({
   },
   apiSettings: {
     apiKey: 'd93c8fdeed5c57d0324a3c09acc8dd75',
-    baseUrl: 'https://api.themoviedb.org/3/',
-    imageBaseUrl: 'https://image.tmdb.org/t/p/original',
+    baseUrl: 'http://api.themoviedb.org/3/',
+    imageBaseUrl: 'http://image.tmdb.org/t/p/original',
     endPoints:{
       film: {
         popular: 'movie/popular/',
