@@ -3,12 +3,12 @@
     <div id="cardInfoComponent" class="col-11 col-md-8 col-lg-5 d-flex flex-column justify-content-start align-items-center">
       <div id="cardInfoComponentHeader">
         <div class="w-100 h-100">
-          <i id="stopTrailers" class="fs-1 fa-solid fa-xmark" @click="CloseCardInfo"></i>
+          <i id="stopTrailers" class="fs-3 fa-solid fa-xmark" @click="CloseCardInfo"></i>
           <img :src="GetImageUrl(store.selectedCarouselCard.carouselCardData)" :alt="store.selectedCarouselCard.carouselCardData.title" :class="{'d-none': store.selectedCarouselCard.playVideos}" >
           <YoutubeVideoComponent id="cardInfoHero" :videoKey="youtubeVideoKeyList[0]" :playlist="playlistString" :class="{'d-none': !store.selectedCarouselCard.playVideos}" />
           <h3 class="px-4">{{ store.selectedCarouselCard.carouselCardData.title }}</h3>
           <i id="playTrailers" class="fs-1 fa-solid fa-play" @click="PlayTrailers" :class="{'d-none': store.selectedCarouselCard.playVideos || youtubeVideoKeyList.length == 0}"></i>
-          <i id="returnStart" class="fs-1 fa-solid fa-arrow-left" :class="{'d-none': !store.selectedCarouselCard.playVideos || youtubeVideoKeyList.length == 0}" @click="ReturnStart"></i>
+          <i id="returnStart" class="fs-3 fa-solid fa-arrow-left" :class="{'d-none': !store.selectedCarouselCard.playVideos || youtubeVideoKeyList.length == 0}" @click="ReturnStart"></i>
         </div>
       </div>
       <div id="cardInfoComponentContent" class="w-100 p-4">
