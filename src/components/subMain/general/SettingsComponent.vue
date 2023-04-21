@@ -13,7 +13,7 @@
           <div class="form-check d-flex gap-3 justify-content-center">
             <input class="form-check-input" type="checkbox" v-model="store.menuSettings.showMoreInfoInCarouselCard" id="showMoreInfoInCarouselCard">
             <label class="form-check-label" for="flexCheckChecked">
-              <h5>Mostra info nella preview di film / serie tv</h5>
+              <h5>{{store.settings.languages[store.settings.currentLanguageIndex].settings[2]}}</h5>
             </label>
           </div>
           <div class="d-flex gap-3 justify-content-center align-items-center">
