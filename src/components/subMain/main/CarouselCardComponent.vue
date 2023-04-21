@@ -9,7 +9,7 @@
       </div>
       <div class="flip-card-back p-3">
         <h5>{{cardData.data.title}}</h5> 
-        <p>{{ReduceString(cardData.data.overview)}}</p> 
+        <p>{{GetOverviewString()}}</p> 
       </div>
     </div>
   </div>
@@ -36,9 +36,10 @@
         store.selectedCarouselCard.carouselCardData = this.cardData.data;
         store.selectedCarouselCard.isOpened = true;
       },
-      ReduceString(stringVar){
-        if(stringVar.length>100)
-          stringVar = stringVar.substring(0,99) + " [...]";
+      GetOverviewString(){
+        let stringVar = this.cardData.data.overview;
+        if(this.cardData.data.title.length + this.cardData.data.overview.length > 100)
+          stringVar = stringVar.substring(0,(99 - this.cardData.data.title.length)) + " [...]";
         return stringVar;
       }
     }
