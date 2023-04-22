@@ -1,11 +1,6 @@
 <template>
   <main class="px-4 d-flex flex-column justify-content-start align-items-center gap-4" @scroll="handleScroll">
-    <HomeComponent />
-    <FilmComponent />
-    <TvSeriesComponent />
-    <UpcomingComponent />
-    <PopularComponent />
-    <TopRatedComponent />
+    <HomeComponent :pageIndex="store.settings.currentMenuSectionIndexOpened" />
     <SearchComponent />
     <CardInfoComponent :card="store.selectedCarouselCard.carouselCardData" />
   </main>
