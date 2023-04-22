@@ -64,13 +64,13 @@ Users should be able to:
 - Bootstrap
 - Vue
 - Vite
-- Yu-Gi-Oh Api
+- The Movie Database API
 
 ### Useful resources
 
 - [Boostrap documentation](https://getbootstrap.com/) - This helped me to learn how to use the Bootstrap framework during the construction of this site.
 - [Vue documentation](https://vuejs.org/guide/introduction.html) - This helped me to learn how to use Vue during the construction of this site.
-- [Yu-Gi-Oh Api documentation](https://ygoprodeck.com/api-guide/) - This allowed me to use some APIs to get the card data to display.
+- [The Movie Database API documentation](https://developers.themoviedb.org/3/getting-started/introduction) - This allowed me to use APIs to get the card data to display.
 
 ## Author
 
