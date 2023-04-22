@@ -34,16 +34,16 @@ export const store = reactive({
     imageBaseUrl: 'https://image.tmdb.org/t/p/original',
     endPoints:{
       film: {
-        popular: 'movie/popular/',
-        topRated: 'movie/top_rated/',
+        popular: 'movie/popular',
+        topRated: 'movie/top_rated',
         nowPlaying: 'movie/now_playing',
         upcoming: 'movie/upcoming',
         search: 'search/movie',
         base: 'movie/'
       },
       tv: {
-        popular: 'tv/popular/',
-        topRated: 'tv/top_rated/',
+        popular: 'tv/popular',
+        topRated: 'tv/top_rated',
         airingToday: 'tv/airing_today',
         search: 'search/tv',
         base: 'tv/'
