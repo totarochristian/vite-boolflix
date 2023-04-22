@@ -8,11 +8,6 @@
 
 <script>
   import HomeComponent from '../subMain/pages/HomeComponent.vue';
-  import FilmComponent from '../subMain/pages/FilmComponent.vue';
-  import TvSeriesComponent from '../subMain/pages/TvSeriesComponent.vue';
-  import UpcomingComponent from '../subMain/pages/UpcomingComponent.vue';
-  import PopularComponent from '../subMain/pages/PopularComponent.vue';
-  import TopRatedComponent from '../subMain/pages/TopRatedComponent.vue';
   import SearchComponent from '../subMain/pages/SearchComponent.vue';
   import CardInfoComponent from '../subMain/general/CardInfoComponent.vue';
   import { store } from '../../data/store';
@@ -21,11 +16,6 @@
     components:{
       CardInfoComponent,
       HomeComponent,
-      FilmComponent,
-      TvSeriesComponent,
-      UpcomingComponent,
-      PopularComponent,
-      TopRatedComponent,
       SearchComponent
     },
     data(){
